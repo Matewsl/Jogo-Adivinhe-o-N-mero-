@@ -10,7 +10,7 @@
 <body>
     <div class="content">
         <h1>Descobrir o número de 0 a 100</h1>
-        <input type="number" id="bet" placeholder="Digite um número">
+        <input onkeypress="if(event.keyCode === 13) verifyNumber()" type="number" id="bet" placeholder="Digite um número" autofocus >
         <button onclick="verifyNumber()">Enviar</button>
         <div class="alert" id="alert"><p>Seu texto aqui</p></div>
         </div>
